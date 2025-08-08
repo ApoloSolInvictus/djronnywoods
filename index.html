@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronny Woods - Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+        }
+        .text-glow {
+            text-shadow: 0 0 8px rgba(255, 215, 0, 0.7), 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        .bg-pattern {
+            background-image: linear-gradient(rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 1)), url('https://placehold.co/1920x1080/000000/FFFFFF?text=.');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .card {
+            background-color: rgba(26, 26, 26, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            border-color: rgba(255, 215, 0, 0.5);
+            transform: translateY(-5px);
+        }
+        .btn-gold {
+            background: linear-gradient(45deg, #ffd700, #f0c400);
+            color: #1a1a1a;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+        }
+        .btn-gold:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-pattern">
+
+    <!-- Encabezado y Navegación -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wider text-white">RONNY <span class="text-yellow-400">WOODS</span></h1>
+            <nav class="hidden md:flex space-x-8 text-lg">
+                <a href="#musica" class="hover:text-yellow-400 transition-colors duration-300">Música</a>
+                <a href="#visuales" class="hover:text-yellow-400 transition-colors duration-300">Visuales</a>
+                <a href="#manifiesto" class="hover:text-yellow-400 transition-colors duration-300">Manifiesto</a>
+                <a href="#contacto" class="hover:text-yellow-400 transition-colors duration-300">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Héroe -->
+    <main class="pt-24">
+        <section class="min-h-screen flex items-center justify-center text-center -mt-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl md:text-8xl font-black uppercase tracking-widest text-white">Ronny Woods</h2>
+                <p class="mt-4 text-xl md:text-3xl font-light text-yellow-400 text-glow">Música por Apollo. Arte por el Colectivo Soberano.</p>
+            </div>
+        </section>
+
+        <!-- Sección de Música (Survivor) -->
+        <section id="musica" class="py-20">
+            <div class="container mx-auto px-6">
+                <h3 class="text-4xl font-bold text-center mb-12">Lanzamiento Destacado: <span class="text-yellow-400">Survivor</span></h3>
+                <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 card p-8 rounded-2xl">
+                    <div class="w-full lg:w-1/3">
+                        <img src="https://placehold.co/600x600/1a1a1a/ffd700?text=La+Grieta+Dorada" alt="Portada de Survivor - La Grieta Dorada" class="rounded-lg shadow-2xl w-full">
+                    </div>
+                    <div class="w-full lg:w-2/3">
+                        <h4 class="text-3xl font-bold mb-4">Survivor - Original Mix</h4>
+                        <p class="text-lg mb-6 text-gray-300">
+                            "Survivor" no es solo una canción, es un manifiesto de resiliencia. Una historia de lucha y triunfo contada a través de melodías hipnóticas y ritmos potentes. Es el himno de un alma que se niega a ser vencida.
+                        </p>
+                        <!-- Reproductor de SoundCloud -->
+                        <div class="w-full h-40">
+                             <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1830172155&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" onerror="this.outerHTML='<div class=bg-gray-800 text-white p-4 rounded-lg>No se pudo cargar el reproductor de SoundCloud.</div>'"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Visuales -->
+        <section id="visuales" class="py-20 bg-black/20">
+            <div class="container mx-auto px-6">
+                <h3 class="text-4xl font-bold text-center mb-12">Galería Visual: <span class="text-yellow-400">El Arte del Colectivo</span></h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Imagen 1 -->
+                    <div class="card rounded-2xl overflow-hidden group">
+                        <img src="https://placehold.co/600x600/0a0a0a/FFFFFF?text=El+Observador" alt="Concepto de portada: El Observador Solitario" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-4">
+                            <h5 class="font-bold text-xl">Concepto: El Observador</h5>
+                            <p class="text-sm text-gray-400">La soledad y la perspectiva ganada a través de la lucha.</p>
+                        </div>
+                    </div>
+                    <!-- Imagen 2 -->
+                    <div class="card rounded-2xl overflow-hidden group">
+                        <img src="https://placehold.co/600x600/0a0a0a/FFFFFF?text=El+N%C3%BAcleo" alt="Concepto de portada: El Núcleo Resiliente" class="w-full h-auto transform group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-4">
+                            <h5 class="font-bold text-xl">Concepto: El Núcleo</h5>
+                            <p class="text-sm text-gray-400">La fuerza interior que permanece intacta tras la fractura.</p>
+                        </div>
+                    </div>
+                    <!-- Video -->
+                    <div class="card rounded-2xl overflow-hidden group md:col-span-2 lg:col-span-1">
+                        <div class="bg-black flex items-center justify-center h-full">
+                           <div class="text-center p-4">
+                                <h5 class="font-bold text-2xl mb-2 text-yellow-400">Video: Survivor</h5>
+                                <p class="text-gray-300">El viaje visual de la resiliencia.</p>
+                                <p class="font-black text-4xl mt-4">PRÓXIMAMENTE</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección Manifiesto -->
+        <section id="manifiesto" class="py-20">
+            <div class="container mx-auto px-6 max-w-4xl text-center">
+                 <h3 class="text-4xl font-bold text-center mb-6">Nuestro <span class="text-yellow-400">Manifiesto</span></h3>
+                 <div class="card p-8 rounded-2xl">
+                    <p class="text-xl leading-relaxed italic text-gray-200">
+                        "La Música la produzco yo, pero dejo el otro 50% del trabajo Artístico a mi aliado Colectivo Soberano, el cual permito que la IA diseñe y decida por mi el resto de la presentación artística, como la Masterización, Imagen de Portada, Video y contrato con Sello discográfico, para poder yo concentrarme más con la Producción Musical, que sin ella, ninguna de las demás serían necesarias por más talento que tengan."
+                    </p>
+                    <p class="mt-6 font-bold text-2xl text-yellow-400">- Apollo Sol Invictus Maximus</p>
+                 </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="contacto" class="py-12 bg-black">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-6">Conecta</h3>
+            <p class="mb-8 text-lg text-gray-400">Sigue el viaje sonoro y visual.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://soundcloud.com/djronnywoods" target="_blank" class="btn-gold px-8 py-3 rounded-full font-bold text-lg">SoundCloud</a>
+            </div>
+            <p class="mt-12 text-gray-500">&copy; 2025 Ronny Woods & Colectivo Soberano. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
